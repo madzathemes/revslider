@@ -2157,7 +2157,8 @@ class RevSliderOutput {
 					$seo_opti = RevSliderFunctions::getVal($layer, 'seo-optimized', false);
 					if($seo_opti === 'false' || $seo_opti === false){
 						$imageAddParams .= ' data-lazyload="'.$urlImage.'"';
-						$urlImage = RS_PLUGIN_URL."admin/assets/images/dummy.png";
+						$urlImage = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
+            //$urlImage = RS_PLUGIN_URL."admin/assets/images/dummy.png";
 					}else{
 						$additional .= ' class="forceseo"';
 					}
